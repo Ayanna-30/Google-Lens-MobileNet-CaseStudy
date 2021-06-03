@@ -1,0 +1,271 @@
+<html>
+    <head>
+        <title>Case Study of MobileNet and Google Lens</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+      </head>
+      <body>
+
+        <div class = "continaer">
+            <center>
+                <h1>Case Study
+                    <img src = "case_study.png" style = "width: 250px;">
+                </h1>
+            </center>
+            <hr>
+            <ol>
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Book</h4>
+                        <img class = "img-responsive" src = "book.png">
+                    </li>
+                    
+                    <h5>Output on <b>Google Lens</b> -
+                    <span>Essay</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> -
+                    <span>Airplane</span>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Google Lens is more accurate</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Comb</h4>
+                        <img class = "img-responsive" src = "comb.png">
+                    </li>
+
+                    <h5> Output on <b>Google Lens</b> - 
+                    <span>Wood</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> - 
+                    <span>Sand paper</span>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Google Lens is more accurate</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Eraser</h4>
+                        <img class = "img-responsive" src = "eraser.png">
+                    </li>
+
+                    <h5>Output on <b>Google Lens</b> - 
+                    <span>Photo</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> - 
+                    <span>Rubber</span>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>MobileNet is more accurate</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Notebook</h4>
+                        <img class = "img-responsive" src = "notebook.png">
+                    </li>
+
+                    <h5>Output on <b>Google Lens</b> - 
+                    <span>Sign</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> - 
+                    <sapn>Book</sapn>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>MobileNet model is more accurate</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Nutcracker</h4>
+                        <img class = "img-responsive" src = "nutcracker.png">
+                    </li>
+
+                    <h5>Output on <b>Google Lens</b> - 
+                    <span>Doll</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> - 
+                    <span>Doll</span>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4>Result - </h4>
+                        <hr>
+                        <h4>Both have to same result, meaning the result is a tie</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                <div class = "text_images_and_result shadow color">
+                    <li>
+                        <h4>Image - Pen</h4>
+                        <img class = "img-responsive" src = "pen.png">
+                    </li>
+
+                    <h5>Output on <b>Google Lens</b> - 
+                    <span>Colored Pencil</span>
+                    </h5>
+
+                    <h5>Output on <b>MobileNet Model</b> - 
+                    <span>Toothpick</span>
+                    </h5>
+
+                    <hr>
+
+                    <div class = "mini_result">
+                        <h4> Result - </h4>
+                        <hr>
+                        <h4>Google Lens is more accurate</h4>
+                    </div>
+                </div>
+                    <hr>
+
+                    <div class = "text_images_and_result shadow color">
+                        <li>
+                            <h4>Image - Phone</h4>
+                            <img class = "img-responsive" src = "phone.png">
+                        </li>
+    
+                        <h5>Output on <b>Google Lens</b> - 
+                        <span>TV Set</span>
+                        </h5>
+    
+                        <h5>Output on <b>MobileNet Model</b> - 
+                        <span>Black paint</span>
+                        </h5>
+    
+                        <hr>
+    
+                        <div class = "mini_result">
+                            <h4> Result - </h4>
+                            <hr>
+                            <h4>Google Lens is more accurate</h4>
+                        </div>
+                    </div>
+                        <hr>
+
+                        <div class = "text_images_and_result shadow color">
+                            <li>
+                                <h4>Image - Scissors</h4>
+                                <img class = "img-responsive" src = "scissors.png">
+                            </li>
+        
+                            <h5>Output on <b>Google Lens</b> - 
+                            <span>Knives</span>
+                            </h5>
+        
+                            <h5>Output on <b>MobileNet Model</b> - 
+                            <span>Ribbon</span>
+                            </h5>
+        
+                            <hr>
+        
+                            <div class = "mini_result">
+                                <h4> Result - </h4>
+                                <hr>
+                                <h4>Google Lens is more accurate</h4>
+                            </div>
+                        </div>
+                            <hr>
+
+                            <div class = "text_images_and_result shadow color">
+                                <li>
+                                    <h4>Image - Stuffed Panda</h4>
+                                    <img class = "img-responsive" src = "stuffed_panda.png">
+                                </li>
+            
+                                <h5>Output on <b>Google Lens</b> - 
+                                <span>Ski Mask</span>
+                                </h5>
+            
+                                <h5>Output on <b>MobileNet Model</b> - 
+                                <span>Panda</span>
+                                </h5>
+            
+                                <hr>
+            
+                                <div class = "mini_result">
+                                    <h4> Result - </h4>
+                                    <hr>
+                                    <h4>Mobilenet Model is more accurate</h4>
+                                </div>
+                            </div>
+                                <hr>
+
+                                <div class = "text_images_and_result shadow color">
+                                    <li>
+                                        <h4>Image - Water Bottle</h4>
+                                        <img class = "img-responsive" src = "water_bottle.png">
+                                    </li>
+                
+                                    <h5>Output on <b>Google Lens</b> - 
+                                    <span>Bottle</span>
+                                    </h5>
+                
+                                    <h5>Output on <b>MobileNet Model</b> - 
+                                    <span>Thermos</span>
+                                    </h5>
+                
+                                    <hr>
+                
+                                    <div class = "mini_result">
+                                        <h4> Result - </h4>
+                                        <hr>
+                                        <h4>Google Lens is more accurate</h4>
+                                    </div>
+                                </div>
+                                    <hr>
+            </ol>
+            
+        </div>
+
+        <h4 style="box-shadow: 5px 5px 18px peachpuff;letter-spacing: 2px;background: white;border-radius: 20px;padding: 20px;border:2px solid black">
+            I tested 10 images. <b>MobileNet</b> predicted 4 of 10 images accurately, including the tie round. Whereas, <b>Google Lens</b> predicted 7 of the 10 images accurately, including the tie round. <br>
+            <br>
+            So, <b>Google Lens</b> is more accurate than the MobileNet Model.</h4>
+      </body>
+</html>
